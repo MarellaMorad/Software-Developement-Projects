@@ -1,0 +1,20 @@
+H:\C# Programming - 2019\KK04 - XML Practice\KK04 - XML Practice\bin\Debug\KK04 - XML Practice.exe.config
+H:\C# Programming - 2019\KK04 - XML Practice\KK04 - XML Practice\bin\Debug\KK04 - XML Practice.exe
+H:\C# Programming - 2019\KK04 - XML Practice\KK04 - XML Practice\bin\Debug\KK04 - XML Practice.pdb
+H:\C# Programming - 2019\KK04 - XML Practice\KK04 - XML Practice\obj\Debug\KK04 - XML Practice.csprojResolveAssemblyReference.cache
+H:\C# Programming - 2019\KK04 - XML Practice\KK04 - XML Practice\obj\Debug\KK04___XML_Practice.Form1.resources
+H:\C# Programming - 2019\KK04 - XML Practice\KK04 - XML Practice\obj\Debug\KK04___XML_Practice.Properties.Resources.resources
+H:\C# Programming - 2019\KK04 - XML Practice\KK04 - XML Practice\obj\Debug\KK04 - XML Practice.csproj.GenerateResource.Cache
+H:\C# Programming - 2019\KK04 - XML Practice\KK04 - XML Practice\obj\Debug\KK04 - XML Practice.csproj.CoreCompileInputs.cache
+H:\C# Programming - 2019\KK04 - XML Practice\KK04 - XML Practice\obj\Debug\KK04 - XML Practice.exe
+H:\C# Programming - 2019\KK04 - XML Practice\KK04 - XML Practice\obj\Debug\KK04 - XML Practice.pdb
+C:\Marella Morad\Programming\KK04 - XML Practice\KK04 - XML Practice\KK04 - XML Practice\bin\Debug\KK04 - XML Practice.exe.config
+C:\Marella Morad\Programming\KK04 - XML Practice\KK04 - XML Practice\KK04 - XML Practice\bin\Debug\KK04 - XML Practice.exe
+C:\Marella Morad\Programming\KK04 - XML Practice\KK04 - XML Practice\KK04 - XML Practice\bin\Debug\KK04 - XML Practice.pdb
+C:\Marella Morad\Programming\KK04 - XML Practice\KK04 - XML Practice\KK04 - XML Practice\obj\Debug\KK04 - XML Practice.csprojAssemblyReference.cache
+C:\Marella Morad\Programming\KK04 - XML Practice\KK04 - XML Practice\KK04 - XML Practice\obj\Debug\KK04___XML_Practice.Form1.resources
+C:\Marella Morad\Programming\KK04 - XML Practice\KK04 - XML Practice\KK04 - XML Practice\obj\Debug\KK04___XML_Practice.Properties.Resources.resources
+C:\Marella Morad\Programming\KK04 - XML Practice\KK04 - XML Practice\KK04 - XML Practice\obj\Debug\KK04 - XML Practice.csproj.GenerateResource.cache
+C:\Marella Morad\Programming\KK04 - XML Practice\KK04 - XML Practice\KK04 - XML Practice\obj\Debug\KK04 - XML Practice.csproj.CoreCompileInputs.cache
+C:\Marella Morad\Programming\KK04 - XML Practice\KK04 - XML Practice\KK04 - XML Practice\obj\Debug\KK04 - XML Practice.exe
+C:\Marella Morad\Programming\KK04 - XML Practice\KK04 - XML Practice\KK04 - XML Practice\obj\Debug\KK04 - XML Practice.pdb

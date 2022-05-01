@@ -1,0 +1,29 @@
+bool Found = false;
+if (File.Exists("dataBase.xml") == false)
+{
+	NewXML();
+}
+else
+{
+	XmlDocument xDoc = new XmlDocument(); // to be able to load, edit, add...
+	xDoc.Load("dataBase.xml");
+
+	foreach (XmlNode xNode in xDoc.SelectNodes("dataBase/user")) //to run through the xml file
+	{
+		//check if the username is already taken
+		if (xNode.SelectSingleNode("username").InnerText == UNTextBox.Text)
+		{
+			Found = true;
+		}
+		else
+		{
+			Found = false;
+		}
+	}
+}
+
+//Under validation method			
+else if(Found == true)
+{
+	MessageBox.Show("Username already taken, please choose a different one");
+}

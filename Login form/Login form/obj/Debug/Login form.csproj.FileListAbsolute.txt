@@ -1,0 +1,11 @@
+H:\C# Programming - 2019\Login form\Login form\bin\Debug\Login form.exe.config
+H:\C# Programming - 2019\Login form\Login form\bin\Debug\Login form.exe
+H:\C# Programming - 2019\Login form\Login form\bin\Debug\Login form.pdb
+H:\C# Programming - 2019\Login form\Login form\obj\Debug\Login form.csprojResolveAssemblyReference.cache
+H:\C# Programming - 2019\Login form\Login form\obj\Debug\Login_form.Form1.resources
+H:\C# Programming - 2019\Login form\Login form\obj\Debug\Login_form.Form2.resources
+H:\C# Programming - 2019\Login form\Login form\obj\Debug\Login_form.Properties.Resources.resources
+H:\C# Programming - 2019\Login form\Login form\obj\Debug\Login form.csproj.GenerateResource.Cache
+H:\C# Programming - 2019\Login form\Login form\obj\Debug\Login form.csproj.CoreCompileInputs.cache
+H:\C# Programming - 2019\Login form\Login form\obj\Debug\Login form.exe
+H:\C# Programming - 2019\Login form\Login form\obj\Debug\Login form.pdb

@@ -1,0 +1,23 @@
+void DateValidation()
+        {
+            XmlDocument xDoc = new XmlDocument(); // to be able to load, edit, add...
+            xDoc.Load(vUsername + "salary.xml");
+
+            foreach (XmlNode xNode in xDoc.SelectNodes(vUsername + "/user")) //to run through the xml file
+            {
+                //check if the username is already taken
+                if (xNode.SelectSingleNode("date").InnerText == vDate)
+                {
+                    Found = true;
+                }
+            }
+
+            if (Found == true)
+            {
+                MessageBox.Show("Oops, it looks like you have already calculated your pay for " + vDate);
+            }
+            else
+            {
+                SaveData();
+            }
+        }

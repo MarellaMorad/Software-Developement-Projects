@@ -1,0 +1,8 @@
+What if the user enters a start but not a finish date?
+Can the user choose what day to display the pay for or it can only be the current day? besides the week and month display
+
+Don't forget to take out the SkipBtn with its code!
+
+What happens if the user works until after 12, when the day changes?
+
+Will I need seperated xml files for weeks and months

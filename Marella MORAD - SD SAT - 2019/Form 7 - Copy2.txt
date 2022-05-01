@@ -1,0 +1,755 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Xml; // to be able to use XML
+using System.IO;
+using System.Xml.XPath; // to be able to track the last node in the xml file
+
+namespace SAT_Practice
+{
+    // By: Marella MORAD
+    // Last edited: 31 - Jul - 2019
+
+
+    public partial class Form7 : Form
+    {
+        //public variables so that they can be used througout the program
+        string vPPH; // to store the pay per hour
+
+        string vUsername = Form3.passingText; // to get the username from form 3 and use it in creating the xml file
+        string vDate = DateTime.Now.ToString("dd-MM-yy"); // to store the date
+
+        double StartTime; // to store the start time
+        double FinishTime; // to store the finish time
+
+        // all these variables are public as they will be used in multiple methods/procedures
+        double vWorkTimeDay = 0; // to store the hours worked per day
+        double vWorkTimeWeek = 0; // // to store the hours worked per week
+        double vWorkTimeMonth = 0; // to store the hours worked per month
+
+        double vPayDay; // to store the pay per day
+        double vPayWeek; // to store the pay per week
+        double vPayMonth; // to store the pay per month
+
+        int i = 1; // to count the days
+        int w; // to count weeks
+        int m; // to count months
+
+        string vDayNum; // To store the day number - so it can be further used to determine weeks, months...
+        string vWeekNum;// to store the week number
+        string vMonthNum; // to store the month number
+        int vDayNumInt;
+
+        bool StartFound = false; // to store whether the start time is found or not
+        bool EndFound = false; // to store whether the finish time is found or not
+        bool DateFound = false; // to store whether the date was found or not
+
+        string vDisplayChoice; // to store the dispaly choice
+        string vDateCheck; // to store the last date recoreded in the xml and check it with the current date
+        int daysDiff;
+
+        // two variables to be user in the DisplayInListBox() method/procedure
+        double TimeDayDisplay; // to store the time per day for display purposes
+        double PayDayDisplay; // to store the pay per day for display purposes
+
+        // crearte an array and assign it 7 values becuase the display will be per week - only 7 days
+        double[] ArrTimeDay = new double[7];
+        double[] ArrPayDay = new double[7];
+
+        public Form7()
+		{
+            InitializeComponent();
+            SaveNotWorkedDays(); // Runs first so that the program doesn't crush in case of a no working day
+            vDate = DateTime.Now.ToString("dd-MM-yy"); // set the date back to current day
+        }
+
+		private void CalcBtn_Click(object sender, EventArgs e)
+		{
+            // to clear the listboxes, in case any data is displayed
+            WAListBox.Items.Clear();
+            PRListBox.Items.Clear();
+            DisplayLabel.Text = " "; // To clear the label
+
+            // start with validating the pay entered in the textbox
+            PayValidation(); // validate the values entered for the pay
+        }
+
+        void PayValidation() 
+        {
+            vPPH = PayTextBox.Text; // set the value to whatever the user enters
+
+            // variables to assist in type check
+            double vPPHDouble;
+            bool CheckDoubleType = double.TryParse(vPPH, out vPPHDouble);
+
+            if (String.IsNullOrEmpty(vPPH)) // check if the textBox is empty - no values entered and display a message
+            {
+                MessageBox.Show("Please enter how much you get paid per hour");
+            }
+
+            else if (CheckDoubleType == false) // check if the data entered is double - no symboles or letters allowed (except for ".") and display a message
+            {
+                MessageBox.Show("Please enter a numerical value");
+            }
+
+            else if (vPPHDouble < 0) // check for negative values and display a message
+            {
+                MessageBox.Show("Please enter a valid Pay - no negative numbers!");
+            }
+
+            else
+            {
+                //after checking all possible values/no values entered, an existance check will run to check if the xml file exists or not
+                ExistanceCheck();
+            }
+		}
+
+        void ExistanceCheck()
+        {
+            if (File.Exists(vUsername + "start.xml") == true && File.Exists(vUsername + "end.xml") == true)
+            {
+                StartTimeExistanceValidation(); // Validation starts - checks if the start time has been reocrede for the day
+            }
+            else if (File.Exists(vUsername + "start.xml") == false || File.Exists(vUsername + "start.xml") == false)
+            {
+                MessageBox.Show("Opps, it seems like you have forgetten to enter a Start/Finish time");
+
+                // if the xml files do not exist, send the user back to the selection page to enter their start/finish time
+                Form4 Selection = new Form4(); // open the next form
+                Selection.Show();
+                this.Hide();
+            }
+                
+        }
+
+        void StartTimeExistanceValidation()
+        {
+            //load the XML document
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(vUsername + "start.xml");
+
+            foreach (XmlNode xNode in xDoc.SelectNodes(vUsername + "/user")) //to run through the xml file
+            {
+                //check if the current date exists in XML file
+                if (xNode.SelectSingleNode("date").InnerText == vDate)
+                {
+                    StartFound = true;
+                }
+            }
+
+            if (StartFound == true)
+            {
+                FinishTimeExistanceValidation(); // Run the finish time check if the start time was found
+            }
+            else // of not found!
+            {
+                MessageBox.Show("Opps, it seems like you have forgetten to enter a Start time");
+
+                // if the start time is missing, send the user back to the start time form
+                Form5 Start = new Form5();
+                Start.Show();
+                this.Hide();
+            }
+        }
+
+        void FinishTimeExistanceValidation()
+        {
+            //load the XML document
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(vUsername + "end.xml");
+
+            foreach (XmlNode xNode in xDoc.SelectNodes(vUsername + "/user")) //to run through the xml file
+            {
+                //check if the current date exists in XML file
+                if (xNode.SelectSingleNode("date").InnerText == vDate)
+                {
+                    EndFound = true;
+                }
+            }
+
+            if (EndFound == true) // if both times are found, then get them from the xml files
+            {
+                // to get the times from the xml files
+                GetStartTime();
+                GetEndTime();
+
+                // Run the XmlCheck method
+                XmlCheck();
+            }
+            else // if not found!
+            {
+                MessageBox.Show("Opps, it seems like you have forgetten to enter a Finish time");
+
+                // if the finish time doesn't exist, send the user to the finish form
+                Form6 Finish = new Form6();
+                Finish.Show();
+                this.Hide();
+            }
+        }
+
+        void GetStartTime() // to get the start time from the start xml and save for further calculations
+        {
+            //load the XML document
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(vUsername + "start.xml");
+
+            foreach (XmlNode xNode in xDoc.SelectNodes(vUsername + "/user")) //to run through the xml file
+            {
+                //check if the current date exists in XML file
+                if (xNode.SelectSingleNode("date").InnerText == vDate)
+                {
+                    string start = xNode.SelectSingleNode("start").InnerText.ToString();
+
+                    start = start.Replace(":", "."); // to convert from time to double
+                    StartTime = double.Parse(start);
+                }
+            }
+        }
+
+        void GetEndTime()
+        {
+            //load the XML document
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(vUsername + "end.xml");
+
+            foreach (XmlNode xNode in xDoc.SelectNodes(vUsername + "/user")) //to run through the xml file
+            {
+                //check if the username and password entered match with the data in the XML file
+                if (xNode.SelectSingleNode("date").InnerText == vDate)
+                {
+                    string end = xNode.SelectSingleNode("end").InnerText.ToString(); 
+
+                    end = end.Replace(":", "."); // to convert from time to double
+                    FinishTime = double.Parse(end);
+                }
+            }
+        }
+
+        void XmlCheck() // run a check to see whether or not the xml file exists and act upon the results
+        {
+            if (File.Exists(vUsername + "salary.xml") == false)
+            {
+                CalcFirstTime();
+                NewXML(); // if it doesn't exist, create a new one
+            }
+            else if (File.Exists(vUsername + "salary.xml") == true)
+            {
+                CalcNextTime();
+                DateValidation();
+            }
+        }
+
+        void CalcFirstTime() // to calculate the pay/time for the first time - no addition of hours/pay required
+        {
+            vWorkTimeDay = Math.Round((FinishTime - StartTime), 2); // to calculate the time worked per day
+
+            if (vWorkTimeDay < 1) // if the time is less than an hour, no further calculation is needed
+            {
+                vWorkTimeDay = vWorkTimeDay + 0;
+            }
+            else if (vWorkTimeDay > 1) // if the time is more than an hour, a 0.4 should be subtracted from the number as the difference between 1 and hour is 0.4 ( 1 - 0.6 = 0.4)
+            {
+                vWorkTimeDay = Math.Round(vWorkTimeDay - 0.4, 2); // Round the answer to 2 decimal places
+            }
+            
+            // to calculate the time worked per day
+            var Mins = (double)(((decimal)vWorkTimeDay % 1) * 100); // to get the minutes only - the two numbers after the decimal point
+            vWorkTimeDay = Math.Round(((vWorkTimeDay - (Mins/100)) + (Mins/60)),2); // subtract mins from actual number and add mins/60 for accurate calculations
+
+            vPayDay = Math.Round(vWorkTimeDay * double.Parse(vPPH),2); // multiplying time by pay to get the salary per day
+
+            // for the first time, these values equal to each other as only one day of the week has been worked
+            vWorkTimeWeek = Math.Round(vWorkTimeDay,2);
+            vWorkTimeMonth = Math.Round(vWorkTimeWeek,2);
+
+            vPayWeek = Math.Round(vPayDay,2);
+            vPayMonth = Math.Round(vPayWeek,2);
+
+            vDayNum = i.ToString(); // to start the days counting
+            vWeekNum = 1.ToString(); // to start the weeks counting
+            vMonthNum = 1.ToString(); //to start the months counting
+        }
+
+        void CalcNextTime() // after the first calculation is done, addition of hours/pay are required
+        {
+            var vYesterday = DateTime.Now.AddDays(-1); // to get data from the previous day and add them to current day (for month and week calculations)
+   
+            vWorkTimeDay = Math.Round((FinishTime - StartTime), 2); // to calculate the time worked per day
+            if (vWorkTimeDay < 1) // if the time is less than an hour, no further calculation is needed
+            {
+                vWorkTimeDay = vWorkTimeDay + 0;
+            }
+            else if (vWorkTimeDay > 1) // if the time is more than an hour, a 0.4 should be subtracted from the number as the difference between 1 and hour is 0.4 ( 1 - 0.6 = 0.4)
+            {
+                vWorkTimeDay = Math.Round(vWorkTimeDay - 0.4, 2); // Round the answer to 2 decimal places
+            }
+
+            // to calculate the time worked per day
+            var Mins = (double)(((decimal)vWorkTimeDay % 1) * 100); // to get the minutes only - the two numbers after the decimal point
+            vWorkTimeDay = Math.Round(((vWorkTimeDay - (Mins / 100)) + (Mins / 60)), 2); // subtract mins from actual number and add mins/60 for accurate calculations
+
+            vPayDay = Math.Round(vWorkTimeDay * double.Parse(vPPH), 2); // multiplying time by pay to get the salary per day
+
+            //load the XML document
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(vUsername + "salary.xml");
+
+            foreach (XmlNode xNode in xDoc.SelectNodes(vUsername + "salary/user")) //to run through the xml file
+            {
+                //check if data from the previous day exists in the XML file
+                if (xNode.SelectSingleNode("date").InnerText == vYesterday.ToString("dd-MM-yy"))
+                {
+                    // if so, get them and add them to today's earnings/hours
+                    vWorkTimeWeek = Math.Round(vWorkTimeDay + (double.Parse(xNode.SelectSingleNode("timeWeek").InnerText)), 2);
+                    vWorkTimeMonth = Math.Round(vWorkTimeWeek, 2);
+
+                    vPayWeek = Math.Round(vPayDay + (double.Parse(xNode.SelectSingleNode("payWeek").InnerText)), 2);
+                    vPayMonth = Math.Round(vPayWeek, 2);
+
+                    vDayNum = (int.Parse(xNode.SelectSingleNode("dayNum").InnerText) + 1).ToString(); // increment dayNum by 1
+                    w = int.Parse(xNode.SelectSingleNode("weekNum").InnerText); // set the w counter to the week number saved in the xml
+                    m = int.Parse(xNode.SelectSingleNode("monthNum").InnerText);// set the m counter to the month number saved in the xml
+
+                    AssignWeekAndMonthNum(vDayNum); // Run this
+                }
+            }
+
+            // after getting all the values, check for the week and month numbers - in case a new week/month starts, set the time & pay to 0 + the new day pay & time
+            CheckForWeek();
+            CheckForMonth();
+        }
+
+        void AssignWeekAndMonthNum(string vDayNumParsed) // to pass it the correct date value
+        {
+            vDayNumInt = int.Parse(vDayNumParsed); // turn the vDayNum into an integer and store it as vDayNumInt to be easier to refer to it
+            MessageBox.Show("Day number is " + vDayNumParsed); // Display day number - test purposes
+
+            if (vDayNumInt == (7 * w) + 1) // Check if a new week has statred
+            {
+                // if so, add 1 to the week number
+                vWeekNum = (w + 1).ToString();
+                MessageBox.Show("Week number is " + vWeekNum); // Display day number - test purposes
+            }
+            else if (vDayNumInt < (7 * w) + 1)
+            {
+                vWeekNum = w.ToString();
+                MessageBox.Show("Week number is " + vWeekNum); // Display day number - test purposes
+            }
+
+            if (vDayNumInt == (30 * m) + 1)
+            {
+                vMonthNum = (m + 1).ToString(); // same as weeks, if a new month have started, you add 1 to the months number
+                MessageBox.Show("Month number is " + vMonthNum); // Display day number - test purposes
+            }
+            else if (vDayNumInt < (30 * m) + 1)
+            {
+                vMonthNum = m.ToString();
+                MessageBox.Show("Month number is " + vMonthNum); // Display day number - test purposes
+            }
+        }
+
+        void DateValidation()
+        {
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(vUsername + "salary.xml");
+
+            foreach (XmlNode xNode in xDoc.SelectNodes(vUsername + "salary/user")) //to run through the xml file
+            {
+                //check if the username is already taken
+                if (xNode.SelectSingleNode("date").InnerText == vDate)
+                {
+                    DateFound = true;
+                }
+            }
+
+            if (DateFound == true)
+            {
+                MessageBox.Show("Oops, it looks like you have already calculated your pay for " + vDate);
+            }
+            else
+            {
+                SaveData();
+            }
+        }
+
+        void NewXML()
+        {
+            //creates the XML file called dataBase.xml, using a new XmlTextWriter called xWriter
+            XmlTextWriter xWriter = new XmlTextWriter(vUsername + "salary.xml", Encoding.UTF8);
+
+            xWriter.Formatting = Formatting.Indented; // format the xml to use indentation
+            xWriter.WriteStartElement(vUsername + "salary");
+            xWriter.WriteStartElement("user");
+            xWriter.WriteStartElement("date");
+            xWriter.WriteString(vDate.ToString());
+            xWriter.WriteEndElement();
+            xWriter.WriteStartElement("dayNum");
+            xWriter.WriteString(vDayNum);
+            xWriter.WriteEndElement();
+            xWriter.WriteStartElement("weekNum");
+            xWriter.WriteString(vWeekNum);
+            xWriter.WriteEndElement();
+            xWriter.WriteStartElement("monthNum");
+            xWriter.WriteString(vMonthNum);
+            xWriter.WriteEndElement();
+            xWriter.WriteStartElement("timeDay");
+            xWriter.WriteString(vWorkTimeDay.ToString());
+            xWriter.WriteEndElement();
+            xWriter.WriteStartElement("timeWeek");
+            xWriter.WriteString(vWorkTimeWeek.ToString());
+            xWriter.WriteEndElement();
+            xWriter.WriteStartElement("timeMonth");
+            xWriter.WriteString(vWorkTimeMonth.ToString());
+            xWriter.WriteEndElement();
+            xWriter.WriteStartElement("payDay");
+            xWriter.WriteString(vPayDay.ToString());
+            xWriter.WriteEndElement();
+            xWriter.WriteStartElement("payWeek");
+            xWriter.WriteString(vPayWeek.ToString());
+            xWriter.WriteEndElement();
+            xWriter.WriteStartElement("payMonth");
+            xWriter.WriteString(vPayMonth.ToString());
+            xWriter.WriteEndElement();
+            xWriter.WriteEndElement();
+            xWriter.WriteEndElement();
+
+            xWriter.Close(); // to close access to the xml so it can be used by other applications.
+
+            //load the XML document
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(vUsername + "salary.xml");
+
+            XmlDeclaration xmldecl; // create a declaration which is the line underneeth
+            xmldecl = xDoc.CreateXmlDeclaration("1.0", "UTF-8", null);
+
+            //Insert the XML declaration into the XML file and save
+            XmlElement root = xDoc.DocumentElement;
+            xDoc.InsertBefore(xmldecl, root); // to insert it before the root element <user>
+            xDoc.Save(vUsername + "salary.xml");
+        }
+
+        void SaveNotWorkedDays()  // in case the user did not work in a certain day of the week, zero data will be saved (in case the user doesn't work all days in the week)
+        {
+            if (File.Exists(vUsername + "salary.xml") == true)
+            {
+                // get the last node and call it last so we can check the not working days
+                XPathNavigator last = new XPathDocument(vUsername + "salary.xml").CreateNavigator().SelectSingleNode("/*/*[last()]");
+
+                // if last is not empty, then check how many days have not been reocrded
+                if (last != null)
+                {
+                    vDateCheck = last.SelectSingleNode("date").InnerXml; // get the date from last
+                    DateTime date1 = DateTime.Parse(vDateCheck);
+                    DateTime date2 = DateTime.Now;
+                    
+                    daysDiff = ((TimeSpan)(date2 - date1)).Days; // subtract the two dates and get the difference
+
+                    var vYesterday = DateTime.Now.AddDays(-1); // set vYesterday ti be used if only one day has not been recorded
+
+                    if (daysDiff > 1) // if the days difference is more then one - as one represents correct recording - yesterday
+                    {
+                        if (daysDiff == 2) // which means only one day was not worked
+                        {
+                            vDate = vYesterday.ToString("dd-MM-yy"); // set the date to yesterday so the correct date will be saved
+                            vDayNum = (int.Parse(last.SelectSingleNode("dayNum").InnerXml) + 1).ToString(); // increase the day number by 1
+                            w = int.Parse(last.SelectSingleNode("weekNum").InnerXml);
+                            m = int.Parse(last.SelectSingleNode("monthNum").InnerXml);
+                            AssignWeekAndMonthNum(vDayNum); // check for the week and month number
+                            vWorkTimeDay = 0; // worktimeday set to zero as it is a not worked day
+                            //Same as vWorkTimeDay, no hours added, therefore, save as before
+                            vWorkTimeWeek = double.Parse(last.SelectSingleNode("timeWeek").InnerXml);
+                            vWorkTimeMonth = double.Parse(last.SelectSingleNode("timeMonth").InnerXml);
+                            // either this or CheckForWeek and CheckForMonth - need to check which one is more accurate
+
+                            vPayDay = 0; // 0 not worked
+                            // Same as the time/pay nothing added, saved as before
+                            vPayWeek = double.Parse(last.SelectSingleNode("payWeek").InnerXml);
+                            vPayMonth = double.Parse(last.SelectSingleNode("payMonth").InnerXml);
+
+                            CheckForWeek();
+                            CheckForMonth();
+
+                            SaveData(); // Not sure if to keep it here, or outside
+                        }
+                        else if (daysDiff > 2)
+                        {
+                            for (int n = 0; n < daysDiff - 1; n++)
+                            {
+                                vDate = (DateTime.Parse(vDateCheck).AddDays(1 + n)).ToString("dd-MM-yy");
+                                vDayNum = (int.Parse(last.SelectSingleNode("dayNum").InnerXml) + 1 + n).ToString();
+                                w = int.Parse(last.SelectSingleNode("weekNum").InnerXml);
+                                m = int.Parse(last.SelectSingleNode("monthNum").InnerXml);
+                                AssignWeekAndMonthNum(vDayNum); // check for the week and month number
+                                vWorkTimeDay = 0;
+                                vWorkTimeWeek = double.Parse(last.SelectSingleNode("timeWeek").InnerXml);
+                                vWorkTimeMonth = double.Parse(last.SelectSingleNode("timeMonth").InnerXml);
+                                vPayDay = 0;
+                                vPayWeek = double.Parse(last.SelectSingleNode("payWeek").InnerXml);
+                                vPayMonth = double.Parse(last.SelectSingleNode("payMonth").InnerXml);
+
+                                CheckForWeek();
+                                CheckForMonth();
+
+                                SaveData();
+                            }
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Days are fine"); // Testing purposes
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No element found.");
+                }
+            }
+        }
+
+
+        void SaveData()
+        {
+            //load the XML document
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(vUsername + "salary.xml");
+
+            //create the new elements (under the root element)
+            XmlNode user = xDoc.CreateElement("user"); //represents a single node/tag in the Xml file 
+            XmlNode date = xDoc.CreateElement("date");
+            XmlNode dayNum = xDoc.CreateElement("dayNum");
+            XmlNode weekNum = xDoc.CreateElement("weekNum");
+            XmlNode monthNum = xDoc.CreateElement("monthNum");
+            XmlNode timeDay = xDoc.CreateElement("timeDay");
+            XmlNode timeWeek = xDoc.CreateElement("timeWeek");
+            XmlNode timeMonth = xDoc.CreateElement("timeMonth");
+            XmlNode payDay = xDoc.CreateElement("payDay");
+            XmlNode payWeek = xDoc.CreateElement("payWeek");
+            XmlNode payMonth = xDoc.CreateElement("payMonth");
+
+            // To save the values calculated into the XML file
+            date.InnerText = vDate.ToString();
+            user.AppendChild(date);
+            dayNum.InnerText = vDayNum;
+            user.AppendChild(dayNum);
+            weekNum.InnerText = vWeekNum;
+            user.AppendChild(weekNum);
+            monthNum.InnerText = vMonthNum;
+            user.AppendChild(monthNum);
+            timeDay.InnerText = vWorkTimeDay.ToString();
+            user.AppendChild(timeDay);
+            timeWeek.InnerText = vWorkTimeWeek.ToString();
+            user.AppendChild(timeWeek);
+            timeMonth.InnerText = vWorkTimeMonth.ToString();
+            user.AppendChild(timeMonth);
+            payDay.InnerText = vPayDay.ToString();
+            user.AppendChild(payDay);
+            payWeek.InnerText = vPayWeek.ToString();
+            user.AppendChild(payWeek);
+            payMonth.InnerText = vPayMonth.ToString();
+            user.AppendChild(payMonth);
+            xDoc.DocumentElement.AppendChild(user);
+            xDoc.Save(vUsername + "salary.xml");
+        }
+
+        private void DisplayBtn_Click(object sender, EventArgs e)
+        {
+            // to clear the listboxes, in case any data is displayed
+            WAListBox.Items.Clear();
+            DisplayLabel.Text = " "; // To clear the label
+
+            DisplayData();
+            //WAListBox.Items.Clear();
+            DisplayInListBox();
+
+            SelectionSort(ArrPayDay);
+            DisplaySelectionArray(ArrPayDay);
+        }
+
+        void DisplayData()
+        {
+            if (DayRB.Checked == false && WeekRB.Checked == false && MonthRB.Checked == false) // if no radio button is checked
+            {
+                MessageBox.Show("Please select how you would like your salary to be displayed");
+            }
+
+            // assign vDisplayChoice, depending on the user's choice
+            else if (DayRB.Checked == true) 
+            {
+                vDisplayChoice = "Day";
+            }
+            else if (WeekRB.Checked == true)
+            {
+                vDisplayChoice = "Week";
+            }
+            else if (MonthRB.Checked == true)
+            {
+                vDisplayChoice = "Month";
+            }
+
+            // Load the xml document...
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(vUsername + "salary.xml");
+
+            foreach (XmlNode xNode in xDoc.SelectNodes(vUsername + "salary/user")) //to run through the xml file
+            {
+                //check if the date exists in the xml file
+                if (xNode.SelectSingleNode("date").InnerText == vDate)
+                {
+                    // if so, assign the variables to the most recent values in the xml file - to be displayed
+                    vWorkTimeDay = double.Parse(xNode.SelectSingleNode("timeDay").InnerText);
+                    vWorkTimeWeek = double.Parse(xNode.SelectSingleNode("timeWeek").InnerText);
+                    vWorkTimeMonth = double.Parse(xNode.SelectSingleNode("timeMonth").InnerText);
+
+                    vWeekNum = xNode.SelectSingleNode("weekNum").InnerText;
+                    vMonthNum = xNode.SelectSingleNode("monthNum").InnerText;
+
+                    vPayDay = double.Parse(xNode.SelectSingleNode("payDay").InnerText);
+                    vPayWeek = double.Parse(xNode.SelectSingleNode("payWeek").InnerText);
+                    vPayMonth = double.Parse(xNode.SelectSingleNode("payMonth").InnerText);
+                }
+            }
+
+            //Display depending on the choice...
+            if (vDisplayChoice == "Day")
+            {
+                DisplayLabel.Text = "You have worked " + vWorkTimeDay + " hours today and your salary is $" + vPayDay;
+            }
+            else if (vDisplayChoice == "Week")
+            {
+                DisplayLabel.Text = "You have worked " + vWorkTimeWeek + " hours this week and your salary is $" + vPayWeek;
+            }
+            else if (vDisplayChoice == "Month")
+            {
+                DisplayLabel.Text = "You have worked " + vWorkTimeMonth + " hours this month and your salary is $" + vPayMonth;
+            }
+        }
+
+        void DisplayInListBox()
+        {
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(vUsername + "salary.xml");
+
+            foreach (XmlNode xNode in xDoc.SelectNodes(vUsername + "salary/user")) //to run through the xml file
+            {
+                if (int.Parse(xNode.SelectSingleNode("dayNum").InnerText) >= 7 * (int.Parse(vWeekNum) - 1) +1 && int.Parse(xNode.SelectSingleNode("dayNum").InnerText) <= 7 * int.Parse(vWeekNum) + 1)
+                {
+                    TimeDayDisplay = double.Parse(xNode.SelectSingleNode("timeDay").InnerText);
+                    PayDayDisplay = double.Parse(xNode.SelectSingleNode("payDay").InnerText);
+
+                    ArrTimeDay[w] = TimeDayDisplay;
+                    ArrPayDay[w] = PayDayDisplay;
+                    string vDisplayDate = xNode.SelectSingleNode("date").InnerText;
+
+                    if (ArrTimeDay[w] > 0 && ArrPayDay [w] > 0)
+                    {
+                        WAListBox.Items.Add(vDisplayDate + ":" + "Working hours = " + ArrTimeDay[w] + ", and Salary = " + ArrPayDay[w]);
+                    }
+                }               
+            }
+        }
+
+        void SelectionSort(double[] array) // to sort pay from highest to lowest and then display it in the list box
+        {
+            int pos_min = 0; //stores the index of the currently found lowest number
+            double temp = 0; // stores the value (not the index) to be swapped
+
+            for (int i = 0; i <= array.Length - 1; i++)
+            {
+                pos_min = i;
+                for (int j = i + 1; j <= array.Length - 1; j++)
+                {
+                    if (array[j] < array[pos_min]) //checks if the value in index j is less than the value in index pos_min 
+                    {
+                        pos_min = j; // sets pos_min to the smallest value
+                    }
+                }
+
+                //swap
+                if (pos_min != i)
+                {
+                    temp = array[i];
+                    array[i] = array[pos_min];
+                    array[pos_min] = temp;
+                }
+            }
+        }
+
+        void DisplaySelectionArray(double[] array)
+        {
+            for (int j = 0; j <= array.Length - 1; j++)
+            {
+                if (array[j] > 0)
+                {
+                    PRListBox.Items.Add(array[j]);
+                }
+            }
+        }
+
+        void CheckForWeek() // to reset the time for week to 0 when a new week starts
+        {
+            //load the XML document
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(vUsername + "salary.xml");
+
+            foreach (XmlNode xNode in xDoc.SelectNodes(vUsername + "salary/user")) //to run through the xml file
+            {
+                if (w == 2 && w <= 52)
+                {
+                    int vWeekNumCheck = int.Parse(xNode.SelectSingleNode("weekNum").InnerText);
+
+                    if (vWeekNumCheck == w)
+                    {
+                        vWorkTimeWeek = Math.Round(vWorkTimeDay, 2);
+
+                        vPayWeek = Math.Round(vPayDay, 2);
+
+                        vDayNum = (int.Parse(xNode.SelectSingleNode("dayNum").InnerText) + 1).ToString();
+                    }
+                }
+            }
+        }
+
+        void CheckForMonth() // to reset the time/pay for month to 0 when a new month starts
+        {
+            //load the XML document
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(vUsername + "salary.xml");
+
+            foreach (XmlNode xNode in xDoc.SelectNodes(vUsername + "salary/user")) //to run through the xml file
+            {
+                if (m == 2 && m <= 12)
+                {
+                    int vMonthNumCheck = int.Parse(xNode.SelectSingleNode("monthNum").InnerText);
+
+                    if (vMonthNumCheck == m)
+                    {
+                        vWorkTimeMonth = Math.Round(vWorkTimeDay, 2);
+
+                        vPayMonth = Math.Round((double.Parse(xNode.SelectSingleNode("payDay").InnerText)), 2);
+
+                        vDayNum = (int.Parse(xNode.SelectSingleNode("dayNum").InnerText) + 1).ToString();
+                    }
+                }
+            }
+        }
+
+        private void Form7_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			DialogResult dialog = MessageBox.Show("Do you really want to close the program?", "Exit", MessageBoxButtons.YesNo);
+			if (dialog == DialogResult.Yes)
+			{
+				Application.ExitThread(); // to exit the program if the user press on the x button
+			}
+			else if (dialog == DialogResult.No)
+			{
+				e.Cancel = true; // to not exit the program if the user pressed No (as exit may be pressed by mistake and therefore avoid loss of data)
+            }
+		}
+    }
+}

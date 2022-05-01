@@ -1,0 +1,28 @@
+void AssignWeekAndMonthNum(string vDayNumParsed)
+        {
+            vDayNumInt = int.Parse(vDayNumParsed); // turn the vDayNum into an integer and store it as vDayNumInt to be easier to refer to it
+            MessageBox.Show("Day number is " + vDayNumParsed); // Display day number - test purposes
+
+            if (vDayNumInt == (7 * w) + 1) // Check if a new week has statred
+            {
+                // if so, add 1 to the week number
+                vWeekNum = (w + 1).ToString();
+                MessageBox.Show("Week number is " + vWeekNum); // Display day number - test purposes
+            }
+            else if (vDayNumInt < (7 * w) + 1)
+            {
+                vWeekNum = w.ToString();
+                MessageBox.Show("Week number is " + vWeekNum); // Display day number - test purposes
+            }
+
+            if (vDayNumInt == (30 * m) + 1)
+            {
+                vMonthNum = (m + 1).ToString(); // same as weeks, if a new month have started, you add 1 to the months number
+                MessageBox.Show("Month number is " + vMonthNum); // Display day number - test purposes
+            }
+            else if (vDayNumInt < (30 * m) + 1)
+            {
+                vMonthNum = m.ToString();
+                MessageBox.Show("Month number is " + vMonthNum); // Display day number - test purposes
+            }
+        }

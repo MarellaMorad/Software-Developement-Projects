@@ -1,0 +1,62 @@
+		void XmlCheck()
+		{
+			if (File.Exists(vUsername + "start.xml") == false)
+			{
+				NewXML();
+			}
+			else if (File.Exists(vUsername + "start.xml") == true)
+			{
+				DateValidation();
+			}
+		}
+
+		void NewXML()
+		{
+			//creates the XML file that will be named after the person who logged in, using a new XmlTextWriter called xWriter
+			XmlTextWriter xWriter = new XmlTextWriter(vUsername + "start.xml", Encoding.UTF8);
+
+			xWriter.Formatting = Formatting.Indented; // format the xml to use indentation
+			xWriter.WriteStartElement(vUsername);
+			xWriter.WriteStartElement("user");
+			xWriter.WriteStartElement("date");
+			xWriter.WriteString(vDate);
+			xWriter.WriteEndElement();
+			xWriter.WriteStartElement("start");
+			xWriter.WriteString(ManTimePicker.Text);
+			xWriter.WriteEndElement();
+			xWriter.WriteEndElement();
+			xWriter.WriteEndElement();
+
+			xWriter.Close(); // to close access to the xml so it can be used by other applications.
+
+			XmlDocument xDoc = new XmlDocument(); // to be able to load, edit, add...
+			xDoc.Load(vUsername + "start.xml");
+
+			XmlDeclaration xmldecl; // create a declaration which is the line underneeth
+			xmldecl = xDoc.CreateXmlDeclaration("1.0", "UTF-8", null);
+
+			//Insert the XML declaration into the XML file and save
+			XmlElement root = xDoc.DocumentElement;
+			xDoc.InsertBefore(xmldecl, root); // to insert it before the root element <library>
+			xDoc.Save(vUsername + "start.xml");
+		}
+
+		void SaveData()
+		{
+			//load the XML document
+			XmlDocument xDoc = new XmlDocument();
+			xDoc.Load(vUsername + "start.xml");
+
+			//create the new elements (under the root element)
+			XmlNode user = xDoc.CreateElement("user"); //represents a single node/tag in the Xml file 
+			XmlNode date = xDoc.CreateElement("date");
+			XmlNode start = xDoc.CreateElement("start");
+
+			// Get the value from the textbox and put into the text of the element, save the XML
+			date.InnerText = vDate;
+			user.AppendChild(date);
+			start.InnerText = ManTimePicker.Text;
+			user.AppendChild(start);
+			xDoc.DocumentElement.AppendChild(user);
+			xDoc.Save(vUsername + "start.xml");
+		}

@@ -1,0 +1,48 @@
+        void GetStartTime() // to get the start time from the start and end xml and save for further calculations
+        {
+            XmlDocument xDoc = new XmlDocument(); // to be able to load, edit, add...
+            xDoc.Load(vUsername + "start.xml");
+
+            foreach (XmlNode xNode in xDoc.SelectNodes(vUsername + "/user")) //to run through the xml file
+            {
+                //check if the username and password entered match with the data in the XML file
+                if (xNode.SelectSingleNode("date").InnerText == vDate)
+                {
+                    MessageBox.Show(xNode.SelectSingleNode("start").InnerText);
+
+                    string date = xNode.SelectSingleNode("start").InnerText.ToString();
+
+                    date = date.Replace(":", "");
+                    date = date.Replace(" ", "");
+
+                    MessageBox.Show(date);
+                    vStartTime = int.Parse(date);
+                }
+            }
+        }
+
+        void GetEndTime()
+        {
+            XmlDocument xDoc = new XmlDocument(); // to be able to load, edit, add...
+            xDoc.Load(vUsername + "end.xml");
+
+            foreach (XmlNode xNode in xDoc.SelectNodes(vUsername + "/user")) //to run through the xml file
+            {
+                //check if the username and password entered match with the data in the XML file
+                if (xNode.SelectSingleNode("date").InnerText == vDate)
+                {
+                    MessageBox.Show(xNode.SelectSingleNode("end").InnerText);
+
+                    string date = xNode.SelectSingleNode("end").InnerText.ToString();
+
+                    date = date.Replace(":", "");
+
+                    MessageBox.Show(date);
+                    vEndTime = int.Parse(date);
+                }
+            }
+        }
+
+
+//Display the result
+            MessageBox.Show((vEndTime - vStartTime).ToString());

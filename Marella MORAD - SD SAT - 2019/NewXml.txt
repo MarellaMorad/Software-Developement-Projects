@@ -1,0 +1,30 @@
+void NewXML()
+{
+	//creates the XML file called dataBase.xml, using a new XmlTextWriter called xWriter
+	XmlTextWriter xWriter = new XmlTextWriter("dataBase.xml", Encoding.UTF8);
+
+	xWriter.Formatting = Formatting.Indented; // format the xml to use indentation
+	xWriter.WriteStartElement("dataBase");
+	xWriter.WriteStartElement("user");
+	xWriter.WriteStartElement("username");
+	xWriter.WriteString(UNTextBox.Text);
+	xWriter.WriteEndElement();
+	xWriter.WriteStartElement("password");
+	xWriter.WriteString(PassTextBox.Text);
+	xWriter.WriteEndElement();
+	xWriter.WriteEndElement();
+	xWriter.WriteEndElement();
+
+	xWriter.Close(); // to close access to the xml so it can be used by other applications.
+
+	XmlDocument xDoc = new XmlDocument(); // to be able to load, edit, add...
+	xDoc.Load("dataBase.xml");
+
+	XmlDeclaration xmldecl; // create a declaration which is the line underneeth
+	xmldecl = xDoc.CreateXmlDeclaration("1.0", "UTF-8", null);
+
+	//Insert the XML declaration into the XML file and save
+	XmlElement root = xDoc.DocumentElement;
+	xDoc.InsertBefore(xmldecl, root); // to insert it before the root element <library>
+	xDoc.Save("dataBase.xml");
+}

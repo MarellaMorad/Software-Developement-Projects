@@ -1,0 +1,10 @@
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Input Box Array Practice\Input Box Array Practice\bin\Debug\Input Box Array Practice.exe.config
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Input Box Array Practice\Input Box Array Practice\bin\Debug\Input Box Array Practice.exe
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Input Box Array Practice\Input Box Array Practice\bin\Debug\Input Box Array Practice.pdb
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Input Box Array Practice\Input Box Array Practice\obj\Debug\Input Box Array Practice.csprojAssemblyReference.cache
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Input Box Array Practice\Input Box Array Practice\obj\Debug\Input_Box_Array_Practice.Form1.resources
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Input Box Array Practice\Input Box Array Practice\obj\Debug\Input_Box_Array_Practice.Properties.Resources.resources
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Input Box Array Practice\Input Box Array Practice\obj\Debug\Input Box Array Practice.csproj.GenerateResource.cache
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Input Box Array Practice\Input Box Array Practice\obj\Debug\Input Box Array Practice.csproj.CoreCompileInputs.cache
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Input Box Array Practice\Input Box Array Practice\obj\Debug\Input Box Array Practice.exe
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Input Box Array Practice\Input Box Array Practice\obj\Debug\Input Box Array Practice.pdb

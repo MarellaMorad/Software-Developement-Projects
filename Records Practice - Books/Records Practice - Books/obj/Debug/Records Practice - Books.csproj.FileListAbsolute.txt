@@ -1,0 +1,10 @@
+H:\C# Programming - 2019\Records Practice - Books\Records Practice - Books\bin\Debug\Records Practice - Books.exe.config
+H:\C# Programming - 2019\Records Practice - Books\Records Practice - Books\bin\Debug\Records Practice - Books.exe
+H:\C# Programming - 2019\Records Practice - Books\Records Practice - Books\bin\Debug\Records Practice - Books.pdb
+H:\C# Programming - 2019\Records Practice - Books\Records Practice - Books\obj\Debug\Records Practice - Books.csprojResolveAssemblyReference.cache
+H:\C# Programming - 2019\Records Practice - Books\Records Practice - Books\obj\Debug\Records_Practice___Books.Form1.resources
+H:\C# Programming - 2019\Records Practice - Books\Records Practice - Books\obj\Debug\Records_Practice___Books.Properties.Resources.resources
+H:\C# Programming - 2019\Records Practice - Books\Records Practice - Books\obj\Debug\Records Practice - Books.csproj.GenerateResource.Cache
+H:\C# Programming - 2019\Records Practice - Books\Records Practice - Books\obj\Debug\Records Practice - Books.csproj.CoreCompileInputs.cache
+H:\C# Programming - 2019\Records Practice - Books\Records Practice - Books\obj\Debug\Records Practice - Books.exe
+H:\C# Programming - 2019\Records Practice - Books\Records Practice - Books\obj\Debug\Records Practice - Books.pdb

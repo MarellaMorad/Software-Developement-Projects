@@ -1,0 +1,32 @@
+        void SaveNotWorkedDays()  // in case the user did not work in a certain day of the week, zero data will be saved (in case the user doesn't work all days in the week)
+        {
+            if (File.Exists(vUsername + "salary.xml") == true && int.Parse(vDayNum) > 2)
+            {
+                XmlDocument xDoc = new XmlDocument(); // to be able to load, edit, add...
+                xDoc.Load(vUsername + "salary.xml");
+
+
+                var vYesterday = DateTime.Now.AddDays(-1);
+                var vDayBeforeYesterday = DateTime.Now.AddDays(-2);
+
+                foreach (XmlNode xNode in xDoc.SelectNodes(vUsername + "salary/user")) //to run through the xml file
+                {
+                    if (xNode.SelectSingleNode("date").InnerText == vDayBeforeYesterday.ToString("dd-MM-yy"))
+                    {
+                        if (xNode.SelectSingleNode("date").InnerText != vYesterday.ToString("dd-MM-yy"))
+                        {
+                            NotWorked = true;
+                        }
+                    }
+                }
+
+                if (NotWorked == false)
+                {
+                    vDate = DateTime.Now.ToString("dd-MM-yy");
+                }
+                else
+                {
+                    SaveData();
+                }
+            }
+        }

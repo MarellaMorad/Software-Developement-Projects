@@ -1,0 +1,47 @@
+        void CheckForWeek() // to reset the time for week to 0 when a new week starts
+        {
+            //load the XML document
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(vUsername + "salary.xml");
+
+            foreach (XmlNode xNode in xDoc.SelectNodes(vUsername + "salary/user")) //to run through the xml file
+            {
+                if (w == 2 && w <= 52)
+                {
+                    int vWeekNumCheck = int.Parse(xNode.SelectSingleNode("weekNum").InnerText);
+
+                    if (vWeekNumCheck == w)
+                    {
+                        vWorkTimeWeek = Math.Round(vWorkTimeDay, 2);
+
+                        vPayWeek = Math.Round(vPayDay, 2);
+
+                        vDayNum = (int.Parse(xNode.SelectSingleNode("dayNum").InnerText) + 1).ToString();
+                    }
+                }
+            }
+        }
+
+        void CheckForMonth() // to reset the time/pay for month to 0 when a new month starts
+        {
+            //load the XML document
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(vUsername + "salary.xml");
+
+            foreach (XmlNode xNode in xDoc.SelectNodes(vUsername + "salary/user")) //to run through the xml file
+            {
+                if (m == 2 && m <= 12)
+                {
+                    int vMonthNumCheck = int.Parse(xNode.SelectSingleNode("monthNum").InnerText);
+
+                    if (vMonthNumCheck == m)
+                    {
+                        vWorkTimeMonth = Math.Round(vWorkTimeDay, 2);
+
+                        vPayMonth = Math.Round((double.Parse(xNode.SelectSingleNode("payDay").InnerText)), 2);
+
+                        vDayNum = (int.Parse(xNode.SelectSingleNode("dayNum").InnerText) + 1).ToString();
+                    }
+                }
+            }
+        }

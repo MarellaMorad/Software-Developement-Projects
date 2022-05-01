@@ -1,0 +1,10 @@
+C:\Marella Morad\Programming\Sorting - KK05 U401\Sorting - KK05 U401\bin\Debug\Sorting - KK05 U401.exe.config
+C:\Marella Morad\Programming\Sorting - KK05 U401\Sorting - KK05 U401\bin\Debug\Sorting - KK05 U401.exe
+C:\Marella Morad\Programming\Sorting - KK05 U401\Sorting - KK05 U401\bin\Debug\Sorting - KK05 U401.pdb
+C:\Marella Morad\Programming\Sorting - KK05 U401\Sorting - KK05 U401\obj\Debug\Sorting - KK05 U401.csprojAssemblyReference.cache
+C:\Marella Morad\Programming\Sorting - KK05 U401\Sorting - KK05 U401\obj\Debug\Sorting___KK05_U401.Form1.resources
+C:\Marella Morad\Programming\Sorting - KK05 U401\Sorting - KK05 U401\obj\Debug\Sorting___KK05_U401.Properties.Resources.resources
+C:\Marella Morad\Programming\Sorting - KK05 U401\Sorting - KK05 U401\obj\Debug\Sorting - KK05 U401.csproj.GenerateResource.cache
+C:\Marella Morad\Programming\Sorting - KK05 U401\Sorting - KK05 U401\obj\Debug\Sorting - KK05 U401.csproj.CoreCompileInputs.cache
+C:\Marella Morad\Programming\Sorting - KK05 U401\Sorting - KK05 U401\obj\Debug\Sorting - KK05 U401.exe
+C:\Marella Morad\Programming\Sorting - KK05 U401\Sorting - KK05 U401\obj\Debug\Sorting - KK05 U401.pdb

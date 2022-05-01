@@ -1,0 +1,19 @@
+void SaveData()
+{
+	//load the XML document
+	XmlDocument xDoc = new XmlDocument();
+	xDoc.Load("dataBase.xml");
+
+	//create the new elements (under the root element)
+	XmlNode user = xDoc.CreateElement("user"); //represents a single node/tag in the Xml file 
+	XmlNode username = xDoc.CreateElement("username");
+	XmlNode password = xDoc.CreateElement("password");
+
+	// Get the value from the textbox and put into the text of the element, save the XML
+	username.InnerText = UNTextBox.Text;
+	user.AppendChild(username);
+	password.InnerText = PassTextBox.Text;
+	user.AppendChild(password);
+	xDoc.DocumentElement.AppendChild(user);
+	xDoc.Save("dataBase.xml");
+}

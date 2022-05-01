@@ -1,0 +1,11 @@
+void XmlCheck()
+{
+	if (File.Exists("dataBase.xml") == false)
+	{
+		NewXML();
+	}
+	else if (File.Exists("dataBase.xml") == true)
+	{
+		SaveData();
+	}
+}
