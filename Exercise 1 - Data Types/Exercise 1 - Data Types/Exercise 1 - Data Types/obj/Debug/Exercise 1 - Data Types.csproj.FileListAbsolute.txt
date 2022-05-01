@@ -1,0 +1,30 @@
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\bin\Debug\Exercise 1 - Data Types.exe.config
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\bin\Debug\Exercise 1 - Data Types.exe
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\bin\Debug\Exercise 1 - Data Types.pdb
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise 1 - Data Types.csprojAssemblyReference.cache
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise_1___Data_Types.Form1.resources
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise_1___Data_Types.Properties.Resources.resources
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise 1 - Data Types.csproj.GenerateResource.cache
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise 1 - Data Types.csproj.CoreCompileInputs.cache
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise 1 - Data Types.exe
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise 1 - Data Types.pdb
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\bin\Debug\Exercise 1 - Data Types.exe.config
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\bin\Debug\Exercise 1 - Data Types.exe
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\bin\Debug\Exercise 1 - Data Types.pdb
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise 1 - Data Types.csprojAssemblyReference.cache
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise_1___Data_Types.Form1.resources
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise_1___Data_Types.Properties.Resources.resources
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise 1 - Data Types.csproj.GenerateResource.cache
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise 1 - Data Types.csproj.CoreCompileInputs.cache
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise 1 - Data Types.exe
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise 1 - Data Types.pdb
+C:\Users\marel\Desktop\Programming\Programming\Programming\Exercise 1 - Data Types\Exercise 1 - Data Types\Exercise 1 - Data Types\bin\Debug\Exercise 1 - Data Types.exe.config
+C:\Users\marel\Desktop\Programming\Programming\Programming\Exercise 1 - Data Types\Exercise 1 - Data Types\Exercise 1 - Data Types\bin\Debug\Exercise 1 - Data Types.exe
+C:\Users\marel\Desktop\Programming\Programming\Programming\Exercise 1 - Data Types\Exercise 1 - Data Types\Exercise 1 - Data Types\bin\Debug\Exercise 1 - Data Types.pdb
+C:\Users\marel\Desktop\Programming\Programming\Programming\Exercise 1 - Data Types\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise 1 - Data Types.csproj.AssemblyReference.cache
+C:\Users\marel\Desktop\Programming\Programming\Programming\Exercise 1 - Data Types\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise_1___Data_Types.Form1.resources
+C:\Users\marel\Desktop\Programming\Programming\Programming\Exercise 1 - Data Types\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise_1___Data_Types.Properties.Resources.resources
+C:\Users\marel\Desktop\Programming\Programming\Programming\Exercise 1 - Data Types\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise 1 - Data Types.csproj.GenerateResource.cache
+C:\Users\marel\Desktop\Programming\Programming\Programming\Exercise 1 - Data Types\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise 1 - Data Types.csproj.CoreCompileInputs.cache
+C:\Users\marel\Desktop\Programming\Programming\Programming\Exercise 1 - Data Types\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise 1 - Data Types.exe
+C:\Users\marel\Desktop\Programming\Programming\Programming\Exercise 1 - Data Types\Exercise 1 - Data Types\Exercise 1 - Data Types\obj\Debug\Exercise 1 - Data Types.pdb
