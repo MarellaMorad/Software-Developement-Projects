@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise 2 - Arrays and record", "Exercise 2 - Arrays and record\Exercise 2 - Arrays and record.csproj", "{5F268DC3-738D-4E08-A8D7-431AB90F556C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F268DC3-738D-4E08-A8D7-431AB90F556C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F268DC3-738D-4E08-A8D7-431AB90F556C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F268DC3-738D-4E08-A8D7-431AB90F556C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F268DC3-738D-4E08-A8D7-431AB90F556C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E319E647-49AA-49AF-87C1-20C88664CBF2}
+	EndGlobalSection
+EndGlobal

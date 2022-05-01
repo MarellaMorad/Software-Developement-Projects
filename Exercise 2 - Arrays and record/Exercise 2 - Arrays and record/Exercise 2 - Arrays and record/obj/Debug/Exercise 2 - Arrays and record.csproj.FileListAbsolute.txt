@@ -1,0 +1,30 @@
+H:\C# Programming - 2019\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\bin\Debug\Exercise 2 - Arrays and record.exe.config
+H:\C# Programming - 2019\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\bin\Debug\Exercise 2 - Arrays and record.exe
+H:\C# Programming - 2019\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\bin\Debug\Exercise 2 - Arrays and record.pdb
+H:\C# Programming - 2019\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise 2 - Arrays and record.csprojResolveAssemblyReference.cache
+H:\C# Programming - 2019\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise_2___Arrays_and_record.Form1.resources
+H:\C# Programming - 2019\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise_2___Arrays_and_record.Properties.Resources.resources
+H:\C# Programming - 2019\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise 2 - Arrays and record.csproj.GenerateResource.Cache
+H:\C# Programming - 2019\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise 2 - Arrays and record.csproj.CoreCompileInputs.cache
+H:\C# Programming - 2019\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise 2 - Arrays and record.exe
+H:\C# Programming - 2019\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise 2 - Arrays and record.pdb
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\bin\Debug\Exercise 2 - Arrays and record.exe.config
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\bin\Debug\Exercise 2 - Arrays and record.exe
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\bin\Debug\Exercise 2 - Arrays and record.pdb
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise 2 - Arrays and record.csprojAssemblyReference.cache
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise_2___Arrays_and_record.Form1.resources
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise_2___Arrays_and_record.Properties.Resources.resources
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise 2 - Arrays and record.csproj.GenerateResource.cache
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise 2 - Arrays and record.csproj.CoreCompileInputs.cache
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise 2 - Arrays and record.exe
+C:\Users\marel\Desktop\Memo\Braybrook College\YEAR 12\Software Development\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise 2 - Arrays and record.pdb
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\bin\Debug\Exercise 2 - Arrays and record.exe.config
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\bin\Debug\Exercise 2 - Arrays and record.exe
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\bin\Debug\Exercise 2 - Arrays and record.pdb
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise 2 - Arrays and record.csprojAssemblyReference.cache
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise_2___Arrays_and_record.Form1.resources
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise_2___Arrays_and_record.Properties.Resources.resources
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise 2 - Arrays and record.csproj.GenerateResource.cache
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise 2 - Arrays and record.csproj.CoreCompileInputs.cache
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise 2 - Arrays and record.exe
+C:\Users\marel\OneDrive\Desktop\Memo\Braybrook College\YEAR 12\SD\Programing\Exercise 2 - Arrays and record\Exercise 2 - Arrays and record\obj\Debug\Exercise 2 - Arrays and record.pdb
