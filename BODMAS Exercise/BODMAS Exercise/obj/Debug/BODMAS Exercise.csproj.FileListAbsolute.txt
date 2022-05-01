@@ -1,0 +1,10 @@
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\BODMAS Exercise\BODMAS Exercise\bin\Debug\BODMAS Exercise.exe.config
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\BODMAS Exercise\BODMAS Exercise\bin\Debug\BODMAS Exercise.exe
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\BODMAS Exercise\BODMAS Exercise\bin\Debug\BODMAS Exercise.pdb
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\BODMAS Exercise\BODMAS Exercise\obj\Debug\BODMAS Exercise.csprojAssemblyReference.cache
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\BODMAS Exercise\BODMAS Exercise\obj\Debug\BODMAS_Exercise.Form1.resources
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\BODMAS Exercise\BODMAS Exercise\obj\Debug\BODMAS_Exercise.Properties.Resources.resources
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\BODMAS Exercise\BODMAS Exercise\obj\Debug\BODMAS Exercise.csproj.GenerateResource.cache
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\BODMAS Exercise\BODMAS Exercise\obj\Debug\BODMAS Exercise.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\BODMAS Exercise\BODMAS Exercise\obj\Debug\BODMAS Exercise.exe
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\BODMAS Exercise\BODMAS Exercise\obj\Debug\BODMAS Exercise.pdb

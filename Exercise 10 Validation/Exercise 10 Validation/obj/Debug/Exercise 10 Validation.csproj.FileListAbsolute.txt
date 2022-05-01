@@ -1,0 +1,10 @@
+C:\Users\Christy\Desktop\Exercise 10 Validation\Exercise 10 Validation\obj\Debug\Exercise 10 Validation.csprojAssemblyReference.cache
+C:\Users\Christy\Desktop\Exercise 10 Validation\Exercise 10 Validation\obj\Debug\Exercise_10_Validation.Form1.resources
+C:\Users\Christy\Desktop\Exercise 10 Validation\Exercise 10 Validation\obj\Debug\Exercise_10_Validation.Properties.Resources.resources
+C:\Users\Christy\Desktop\Exercise 10 Validation\Exercise 10 Validation\obj\Debug\Exercise 10 Validation.csproj.GenerateResource.cache
+C:\Users\Christy\Desktop\Exercise 10 Validation\Exercise 10 Validation\obj\Debug\Exercise 10 Validation.csproj.CoreCompileInputs.cache
+C:\Users\Christy\Desktop\Exercise 10 Validation\Exercise 10 Validation\bin\Debug\Exercise 10 Validation.exe.config
+C:\Users\Christy\Desktop\Exercise 10 Validation\Exercise 10 Validation\bin\Debug\Exercise 10 Validation.exe
+C:\Users\Christy\Desktop\Exercise 10 Validation\Exercise 10 Validation\bin\Debug\Exercise 10 Validation.pdb
+C:\Users\Christy\Desktop\Exercise 10 Validation\Exercise 10 Validation\obj\Debug\Exercise 10 Validation.exe
+C:\Users\Christy\Desktop\Exercise 10 Validation\Exercise 10 Validation\obj\Debug\Exercise 10 Validation.pdb

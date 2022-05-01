@@ -1,0 +1,20 @@
+C:\Users\Christy\Desktop\Validation Exercise\Validation Exercise\obj\Debug\Validation Exercise.csprojAssemblyReference.cache
+C:\Users\Christy\Desktop\Validation Exercise\Validation Exercise\obj\Debug\Validation_Exercise.Form1.resources
+C:\Users\Christy\Desktop\Validation Exercise\Validation Exercise\obj\Debug\Validation_Exercise.Properties.Resources.resources
+C:\Users\Christy\Desktop\Validation Exercise\Validation Exercise\obj\Debug\Validation Exercise.csproj.GenerateResource.cache
+C:\Users\Christy\Desktop\Validation Exercise\Validation Exercise\obj\Debug\Validation Exercise.csproj.CoreCompileInputs.cache
+C:\Users\Christy\Desktop\Validation Exercise\Validation Exercise\bin\Debug\Validation Exercise.exe.config
+C:\Users\Christy\Desktop\Validation Exercise\Validation Exercise\bin\Debug\Validation Exercise.exe
+C:\Users\Christy\Desktop\Validation Exercise\Validation Exercise\bin\Debug\Validation Exercise.pdb
+C:\Users\Christy\Desktop\Validation Exercise\Validation Exercise\obj\Debug\Validation Exercise.exe
+C:\Users\Christy\Desktop\Validation Exercise\Validation Exercise\obj\Debug\Validation Exercise.pdb
+C:\Users\student\Desktop\MouseWithoutBorders\Validation Exercise\Validation Exercise\bin\Debug\Validation Exercise.exe.config
+C:\Users\student\Desktop\MouseWithoutBorders\Validation Exercise\Validation Exercise\bin\Debug\Validation Exercise.exe
+C:\Users\student\Desktop\MouseWithoutBorders\Validation Exercise\Validation Exercise\bin\Debug\Validation Exercise.pdb
+C:\Users\student\Desktop\MouseWithoutBorders\Validation Exercise\Validation Exercise\obj\Debug\Validation Exercise.csprojAssemblyReference.cache
+C:\Users\student\Desktop\MouseWithoutBorders\Validation Exercise\Validation Exercise\obj\Debug\Validation_Exercise.Form1.resources
+C:\Users\student\Desktop\MouseWithoutBorders\Validation Exercise\Validation Exercise\obj\Debug\Validation_Exercise.Properties.Resources.resources
+C:\Users\student\Desktop\MouseWithoutBorders\Validation Exercise\Validation Exercise\obj\Debug\Validation Exercise.csproj.GenerateResource.cache
+C:\Users\student\Desktop\MouseWithoutBorders\Validation Exercise\Validation Exercise\obj\Debug\Validation Exercise.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\MouseWithoutBorders\Validation Exercise\Validation Exercise\obj\Debug\Validation Exercise.exe
+C:\Users\student\Desktop\MouseWithoutBorders\Validation Exercise\Validation Exercise\obj\Debug\Validation Exercise.pdb

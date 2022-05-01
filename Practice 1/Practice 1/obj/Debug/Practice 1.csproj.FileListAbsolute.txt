@@ -1,0 +1,10 @@
+H:\C# programs\Practice 1\Practice 1\bin\Debug\Practice 1.exe.config
+H:\C# programs\Practice 1\Practice 1\bin\Debug\Practice 1.exe
+H:\C# programs\Practice 1\Practice 1\bin\Debug\Practice 1.pdb
+H:\C# programs\Practice 1\Practice 1\obj\Debug\Practice_1.Form1.resources
+H:\C# programs\Practice 1\Practice 1\obj\Debug\Practice_1.Properties.Resources.resources
+H:\C# programs\Practice 1\Practice 1\obj\Debug\Practice 1.csproj.GenerateResource.Cache
+H:\C# programs\Practice 1\Practice 1\obj\Debug\Practice 1.csproj.CoreCompileInputs.cache
+H:\C# programs\Practice 1\Practice 1\obj\Debug\Practice 1.exe
+H:\C# programs\Practice 1\Practice 1\obj\Debug\Practice 1.pdb
+H:\C# programs\Practice 1\Practice 1\obj\Debug\Practice 1.csprojResolveAssemblyReference.cache

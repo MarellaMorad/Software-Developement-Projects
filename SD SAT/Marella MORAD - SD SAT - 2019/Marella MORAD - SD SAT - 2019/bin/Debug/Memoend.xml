@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Memo>
+  <user>
+    <date>09-08-19</date>
+    <end>21:00</end>
+  </user>
+  <user>
+    <date>11-08-19</date>
+    <end>10:00</end>
+  </user>
+  <user>
+    <date>12-08-19</date>
+    <end>18:00</end>
+  </user>
+  <user>
+    <date>13-08-19</date>
+    <end>18:18</end>
+  </user>
+  <user>
+    <date>14-08-19</date>
+    <end>23:00</end>
+  </user>
+  <user>
+    <date>16-08-19</date>
+    <end>11:00</end>
+  </user>
+</Memo>

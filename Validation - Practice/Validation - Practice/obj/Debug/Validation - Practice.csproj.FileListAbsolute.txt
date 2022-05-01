@@ -1,0 +1,10 @@
+C:\Users\Christy\source\repos\Validation - Practice\Validation - Practice\bin\Debug\Validation - Practice.exe.config
+C:\Users\Christy\source\repos\Validation - Practice\Validation - Practice\bin\Debug\Validation - Practice.exe
+C:\Users\Christy\source\repos\Validation - Practice\Validation - Practice\bin\Debug\Validation - Practice.pdb
+C:\Users\Christy\source\repos\Validation - Practice\Validation - Practice\obj\Debug\Validation - Practice.csprojAssemblyReference.cache
+C:\Users\Christy\source\repos\Validation - Practice\Validation - Practice\obj\Debug\Validation___Practice.Form1.resources
+C:\Users\Christy\source\repos\Validation - Practice\Validation - Practice\obj\Debug\Validation___Practice.Properties.Resources.resources
+C:\Users\Christy\source\repos\Validation - Practice\Validation - Practice\obj\Debug\Validation - Practice.csproj.GenerateResource.cache
+C:\Users\Christy\source\repos\Validation - Practice\Validation - Practice\obj\Debug\Validation - Practice.csproj.CoreCompileInputs.cache
+C:\Users\Christy\source\repos\Validation - Practice\Validation - Practice\obj\Debug\Validation - Practice.exe
+C:\Users\Christy\source\repos\Validation - Practice\Validation - Practice\obj\Debug\Validation - Practice.pdb

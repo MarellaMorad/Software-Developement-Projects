@@ -1,0 +1,10 @@
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Excersie 4 - 2nd program\Excersie 4 - 2nd program\bin\Debug\Excersie 4 - 2nd program.exe.config
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Excersie 4 - 2nd program\Excersie 4 - 2nd program\bin\Debug\Excersie 4 - 2nd program.exe
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Excersie 4 - 2nd program\Excersie 4 - 2nd program\bin\Debug\Excersie 4 - 2nd program.pdb
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Excersie 4 - 2nd program\Excersie 4 - 2nd program\obj\Debug\Excersie 4 - 2nd program.csprojAssemblyReference.cache
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Excersie 4 - 2nd program\Excersie 4 - 2nd program\obj\Debug\Excersie_4___2nd_program.Form1.resources
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Excersie 4 - 2nd program\Excersie 4 - 2nd program\obj\Debug\Excersie_4___2nd_program.Properties.Resources.resources
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Excersie 4 - 2nd program\Excersie 4 - 2nd program\obj\Debug\Excersie 4 - 2nd program.csproj.GenerateResource.cache
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Excersie 4 - 2nd program\Excersie 4 - 2nd program\obj\Debug\Excersie 4 - 2nd program.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Excersie 4 - 2nd program\Excersie 4 - 2nd program\obj\Debug\Excersie 4 - 2nd program.exe
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Excersie 4 - 2nd program\Excersie 4 - 2nd program\obj\Debug\Excersie 4 - 2nd program.pdb

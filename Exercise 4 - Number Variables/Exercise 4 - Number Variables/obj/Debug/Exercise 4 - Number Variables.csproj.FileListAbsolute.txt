@@ -1,0 +1,10 @@
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Exercise 4 - Number Variables\Exercise 4 - Number Variables\obj\Debug\Exercise 4 - Number Variables.csprojAssemblyReference.cache
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Exercise 4 - Number Variables\Exercise 4 - Number Variables\obj\Debug\Exercise_4___Number_Variables.Form1.resources
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Exercise 4 - Number Variables\Exercise 4 - Number Variables\obj\Debug\Exercise_4___Number_Variables.Properties.Resources.resources
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Exercise 4 - Number Variables\Exercise 4 - Number Variables\obj\Debug\Exercise 4 - Number Variables.csproj.GenerateResource.cache
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Exercise 4 - Number Variables\Exercise 4 - Number Variables\obj\Debug\Exercise 4 - Number Variables.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Exercise 4 - Number Variables\Exercise 4 - Number Variables\bin\Debug\Exercise 4 - Number Variables.exe.config
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Exercise 4 - Number Variables\Exercise 4 - Number Variables\bin\Debug\Exercise 4 - Number Variables.exe
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Exercise 4 - Number Variables\Exercise 4 - Number Variables\bin\Debug\Exercise 4 - Number Variables.pdb
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Exercise 4 - Number Variables\Exercise 4 - Number Variables\obj\Debug\Exercise 4 - Number Variables.exe
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Programming\Exercise 4 - Number Variables\Exercise 4 - Number Variables\obj\Debug\Exercise 4 - Number Variables.pdb

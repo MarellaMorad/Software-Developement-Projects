@@ -1,0 +1,10 @@
+H:\C# programs\Presentation 2 Exercise\Presentation 2 Exercise\bin\Debug\Presentation 2 Exercise.exe.config
+H:\C# programs\Presentation 2 Exercise\Presentation 2 Exercise\bin\Debug\Presentation 2 Exercise.exe
+H:\C# programs\Presentation 2 Exercise\Presentation 2 Exercise\bin\Debug\Presentation 2 Exercise.pdb
+H:\C# programs\Presentation 2 Exercise\Presentation 2 Exercise\obj\Debug\Presentation 2 Exercise.csprojResolveAssemblyReference.cache
+H:\C# programs\Presentation 2 Exercise\Presentation 2 Exercise\obj\Debug\Presentation_2_Exercise.Form1.resources
+H:\C# programs\Presentation 2 Exercise\Presentation 2 Exercise\obj\Debug\Presentation_2_Exercise.Properties.Resources.resources
+H:\C# programs\Presentation 2 Exercise\Presentation 2 Exercise\obj\Debug\Presentation 2 Exercise.csproj.GenerateResource.Cache
+H:\C# programs\Presentation 2 Exercise\Presentation 2 Exercise\obj\Debug\Presentation 2 Exercise.csproj.CoreCompileInputs.cache
+H:\C# programs\Presentation 2 Exercise\Presentation 2 Exercise\obj\Debug\Presentation 2 Exercise.exe
+H:\C# programs\Presentation 2 Exercise\Presentation 2 Exercise\obj\Debug\Presentation 2 Exercise.pdb

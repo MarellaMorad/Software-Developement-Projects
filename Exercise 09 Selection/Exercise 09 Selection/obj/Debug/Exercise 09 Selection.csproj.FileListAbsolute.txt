@@ -1,0 +1,40 @@
+C:\Users\Christy\Desktop\Exercise 09 Selection\Exercise 09 Selection\bin\Debug\Exercise 09 Selection.exe.config
+C:\Users\Christy\Desktop\Exercise 09 Selection\Exercise 09 Selection\bin\Debug\Exercise 09 Selection.exe
+C:\Users\Christy\Desktop\Exercise 09 Selection\Exercise 09 Selection\bin\Debug\Exercise 09 Selection.pdb
+C:\Users\Christy\Desktop\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.csprojAssemblyReference.cache
+C:\Users\Christy\Desktop\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise_09_Selection.Form1.resources
+C:\Users\Christy\Desktop\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise_09_Selection.Properties.Resources.resources
+C:\Users\Christy\Desktop\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.csproj.GenerateResource.cache
+C:\Users\Christy\Desktop\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.csproj.CoreCompileInputs.cache
+C:\Users\Christy\Desktop\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.exe
+C:\Users\Christy\Desktop\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.pdb
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Computing\Exercise 09 Selection\Exercise 09 Selection\bin\Debug\Exercise 09 Selection.exe.config
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Computing\Exercise 09 Selection\Exercise 09 Selection\bin\Debug\Exercise 09 Selection.exe
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Computing\Exercise 09 Selection\Exercise 09 Selection\bin\Debug\Exercise 09 Selection.pdb
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Computing\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.csprojAssemblyReference.cache
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Computing\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise_09_Selection.Form1.resources
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Computing\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise_09_Selection.Properties.Resources.resources
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Computing\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.csproj.GenerateResource.cache
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Computing\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Computing\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.exe
+C:\Users\student\Desktop\MEMO\Braybrook College\Computing\C# Computing\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.pdb
+C:\Users\MOR0015\Desktop\Exercise 09 Selection\Exercise 09 Selection\bin\Debug\Exercise 09 Selection.exe.config
+C:\Users\MOR0015\Desktop\Exercise 09 Selection\Exercise 09 Selection\bin\Debug\Exercise 09 Selection.exe
+C:\Users\MOR0015\Desktop\Exercise 09 Selection\Exercise 09 Selection\bin\Debug\Exercise 09 Selection.pdb
+C:\Users\MOR0015\Desktop\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise_09_Selection.Form1.resources
+C:\Users\MOR0015\Desktop\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise_09_Selection.Properties.Resources.resources
+C:\Users\MOR0015\Desktop\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.csproj.GenerateResource.Cache
+C:\Users\MOR0015\Desktop\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.csproj.CoreCompileInputs.cache
+C:\Users\MOR0015\Desktop\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.exe
+C:\Users\MOR0015\Desktop\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.pdb
+C:\Users\MOR0015\Desktop\Exercise 09 Selection\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.csprojResolveAssemblyReference.cache
+C:\Users\MOR0015\Desktop\Exercise 09 Selection - DONE\Exercise 09 Selection\bin\Debug\Exercise 09 Selection.exe.config
+C:\Users\MOR0015\Desktop\Exercise 09 Selection - DONE\Exercise 09 Selection\bin\Debug\Exercise 09 Selection.exe
+C:\Users\MOR0015\Desktop\Exercise 09 Selection - DONE\Exercise 09 Selection\bin\Debug\Exercise 09 Selection.pdb
+C:\Users\MOR0015\Desktop\Exercise 09 Selection - DONE\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.csprojResolveAssemblyReference.cache
+C:\Users\MOR0015\Desktop\Exercise 09 Selection - DONE\Exercise 09 Selection\obj\Debug\Exercise_09_Selection.Form1.resources
+C:\Users\MOR0015\Desktop\Exercise 09 Selection - DONE\Exercise 09 Selection\obj\Debug\Exercise_09_Selection.Properties.Resources.resources
+C:\Users\MOR0015\Desktop\Exercise 09 Selection - DONE\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.csproj.GenerateResource.Cache
+C:\Users\MOR0015\Desktop\Exercise 09 Selection - DONE\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.csproj.CoreCompileInputs.cache
+C:\Users\MOR0015\Desktop\Exercise 09 Selection - DONE\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.exe
+C:\Users\MOR0015\Desktop\Exercise 09 Selection - DONE\Exercise 09 Selection\obj\Debug\Exercise 09 Selection.pdb
