@@ -1,0 +1,10 @@
+H:\C# Programming - 2019\Exercise 4 - XML Files\Exercise 4 - XML Files\bin\Debug\Exercise 4 - XML Files.exe.config
+H:\C# Programming - 2019\Exercise 4 - XML Files\Exercise 4 - XML Files\bin\Debug\Exercise 4 - XML Files.exe
+H:\C# Programming - 2019\Exercise 4 - XML Files\Exercise 4 - XML Files\bin\Debug\Exercise 4 - XML Files.pdb
+H:\C# Programming - 2019\Exercise 4 - XML Files\Exercise 4 - XML Files\obj\Debug\Exercise 4 - XML Files.csprojResolveAssemblyReference.cache
+H:\C# Programming - 2019\Exercise 4 - XML Files\Exercise 4 - XML Files\obj\Debug\Exercise_4___XML_Files.Form1.resources
+H:\C# Programming - 2019\Exercise 4 - XML Files\Exercise 4 - XML Files\obj\Debug\Exercise_4___XML_Files.Properties.Resources.resources
+H:\C# Programming - 2019\Exercise 4 - XML Files\Exercise 4 - XML Files\obj\Debug\Exercise 4 - XML Files.csproj.GenerateResource.Cache
+H:\C# Programming - 2019\Exercise 4 - XML Files\Exercise 4 - XML Files\obj\Debug\Exercise 4 - XML Files.csproj.CoreCompileInputs.cache
+H:\C# Programming - 2019\Exercise 4 - XML Files\Exercise 4 - XML Files\obj\Debug\Exercise 4 - XML Files.exe
+H:\C# Programming - 2019\Exercise 4 - XML Files\Exercise 4 - XML Files\obj\Debug\Exercise 4 - XML Files.pdb

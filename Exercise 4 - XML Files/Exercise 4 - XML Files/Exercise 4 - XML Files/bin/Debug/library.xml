@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <book>
+    <name>Facebook</name>
+    <location>Technology, Communications</location>
+    <price>$20</price>
+  </book>
+  <book>
+    <name>Google</name>
+    <location>Technology, Communications</location>
+    <price>$20</price>
+  </book>
+  <book>
+    <name>Three wishes</name>
+    <location>Technology, Communications</location>
+    <price>$10</price>
+  </book>
+  <book>
+    <name>Chemistry</name>
+    <location>Science, Chemistry</location>
+    <price>$15</price>
+  </book>
+  <book>
+    <name>Chemicals in action</name>
+    <location>Science, Chemistry</location>
+    <price>$15</price>
+  </book>
+  <book>
+    <name>The house of Hades</name>
+    <location>English, Classic</location>
+    <price>$15</price>
+  </book>
+  <book>
+    <name>Blood sports</name>
+    <location>Lifestyle, Sports and recreation</location>
+    <price>$15</price>
+  </book>
+  <book>
+    <name>The Paralymoics</name>
+    <location>Lifestyle, Sports and recreation</location>
+    <price>$17</price>
+  </book>
+  <book>
+    <name>Sport</name>
+    <location>Lifestyle, Sports and recreation</location>
+    <price>$15</price>
+  </book>
+  <book>
+    <name>Egypt : gods, myths and religion</name>
+    <location>Society, Religion</location>
+    <price>$25</price>
+  </book>
+  <book>
+    <name>An Aztec priest</name>
+    <location>Society, Religion</location>
+    <price>$20</price>
+  </book>
+  <book>
+    <name>Living Grography</name>
+    <location>Ypunger Readers, Countries</location>
+    <price>$15</price>
+  </book>
+</library>
