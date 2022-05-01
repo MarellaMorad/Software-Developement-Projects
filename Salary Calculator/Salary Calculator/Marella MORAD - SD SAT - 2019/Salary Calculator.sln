@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marella MORAD - SD SAT - 2019", "Marella MORAD - SD SAT - 2019\Marella MORAD - SD SAT - 2019.csproj", "{77A302B2-A354-4D88-B712-A6DC1834517D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salary Calculator", "Salary Calculator\Salary Calculator.csproj", "{77A302B2-A354-4D88-B712-A6DC1834517D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
